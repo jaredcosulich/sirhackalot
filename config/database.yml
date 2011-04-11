@@ -1,0 +1,10 @@
+development:
+  database: mysixdegrees_dev
+  adapter: postgresql
+  min_messages: warning
+
+test:
+  database: mysixdegrees_test
+  adapter: postgresql
+  min_messages: warning
+
