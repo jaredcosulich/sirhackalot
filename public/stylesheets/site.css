@@ -154,7 +154,7 @@ p {
   padding-top: 12px; }
 
 .section {
-  margin-top: 60px; }
+  padding: 12px 0; }
 
 ol {
   list-style: decimal outside none;
@@ -170,54 +170,22 @@ ol {
   clear: both;
   padding: 60px 0; }
 
+.left_half {
+  width: 49%;
+  float: left; }
+
+.right_half {
+  width: 49%;
+  float: right; }
+
 /******** Front Page ******* */
-ol.build_network {
-  text-align: left;
-  margin: 30px;
-  padding: 30px;
-  font-size: 14pt;
-  width: 600px;
-  margin: auto; }
-  ol.build_network li {
-    margin-bottom: 12px; }
-
-/******* PROFILE PAGE ******* */
-.right_side {
-  text-align: left;
-  width: 300px;
-  float: right;
-  margin-top: 12px; }
-  .right_side .side_section {
-    border: 1px solid #cccccc;
-    padding: 12px;
-    margin-bottom: 12px; }
-
-.left_side {
-  float: left;
-  margin-top: 12px;
-  overflow: hidden;
-  margin-bottom: 30px; }
-
-#map {
-  width: 588px;
-  height: 588px; }
-
-#edit_location {
-  padding-top: 12px; }
-
-.profile {
-  padding-bottom: 30px; }
-  .profile .profile_description p {
-    padding: 0 0 12px 0; }
-  .profile .profile_photos {
-    overflow: hidden; }
-    .profile .profile_photos img {
-      display: block;
-      padding: 0 6px 6px 0; }
-
-.connection {
-  padding-top: 12px; }
-
-.in_map_connection {
-  height: 4em;
-  overflow: auto; }
+.hack_definition {
+  padding: 12px 0;
+  width: 450px;
+  margin: auto;
+  text-align: left; }
+  .hack_definition .word {
+    font-size: 14pt; }
+    .hack_definition .word .type {
+      font-style: italic;
+      font-size: 10pt; }

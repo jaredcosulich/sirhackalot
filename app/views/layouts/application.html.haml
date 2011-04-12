@@ -1,23 +1,23 @@
 !!!
 %html
   %head
-    %title mysixdegrees.me
+    %title Sir Hackalot
     = stylesheet_link_tag 'scaffold'
     = stylesheet_link_tag 'reset'
     = stylesheet_link_tag 'application'
     = stylesheet_link_tag 'site'
     = javascript_include_tag "jquery-1.4.2", "rails"
     = csrf_meta_tag
-    = render :partial => "shared/lightbox"
+    =# render :partial => "shared/lightbox"
 
   %meta{:property => "title", :content => "#{@page_title || DEFAULT_PAGE_TITLE}"}
   %meta{:property => "description", :content => "#{@page_description || DEFAULT_PAGE_DESCRIPTION}"}
 
-  %meta{:property => "og:title", :content => "mysixdegrees.me"}
-  %meta{:property => "og:site_name", :content => "mysixdegrees.me"}
+  %meta{:property => "og:title", :content => "Sir Hackalot"}
+  %meta{:property => "og:site_name", :content => "Sir Hackalot"}
   %meta{:property => "og:description", :content => ""}
-  %meta{:property => "og:image", :content => "http://mysixdegrees.me/images/logo.png"}
-  %meta{:property => "og:url", :content => "http://mysixdegrees.me"}
+  %meta{:property => "og:image", :content => "http://sirhackalot.com/images/logo.png"}
+  %meta{:property => "og:url", :content => "http://sirhackalot.com"}
   %meta{:property => "og:type", :content => "website"}
 
   = content_for :page_specific_head
@@ -26,15 +26,15 @@
     #header
       #header_content
         %h1
-          = link_to("mysixdegrees.me", "/", :class => "site_title")
+          = link_to("Sir Hackalot", "/", :class => "site_title")
         .header_links
           - if user_signed_in?
-            = link_to "Sign out", destroy_user_session_path
+            = link_to "Sign Out", destroy_user_session_path
             = link_to 'My Page', direct_profile_path(current_user)
           - else
-            = link_to "Sign in", new_user_session_path
+            = link_to "Sign In", new_user_session_path
+          = link_to 'Submit a Hack', '/'
           = link_to 'Home', '/'
-
 
 
     #overall_container

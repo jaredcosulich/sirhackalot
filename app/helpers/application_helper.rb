@@ -15,10 +15,4 @@ module ApplicationHelper
   def alert_html
     "<div class=\"alert\">#{alert}</div>" unless alert.blank?
   end
-
-  def path(from, last_connection)
-    return nil if @from.empty?
-    path = from[-2] == last_connection.to_profile.slug ? @from[0,-2] : @from
-    path.blank? ? nil : path.join(",")
-  end
 end
